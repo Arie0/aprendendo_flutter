@@ -47,10 +47,9 @@ class _CachorroListPageState extends State<CachorroListPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.amber,
-        title: const Text(
-          "Listagem de Cachorros",
-        ),
+        backgroundColor: Color.fromARGB(255, 66, 30, 151),
+        title: const Text("Listagem de Cachorros",
+            style: TextStyle(color: Color.fromARGB(255, 241, 243, 118))),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

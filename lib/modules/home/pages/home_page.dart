@@ -1,3 +1,4 @@
+import 'package:aprendendo_flutter/modules/cachorro/pages/cachorro_list_page.dart';
 import 'package:aprendendo_flutter/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
@@ -7,10 +8,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CachorroListPage(),
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.amber,
-        title: const Text('HomePage'),
+        backgroundColor: Color.fromARGB(255, 66, 30, 151),
+        title: const Text(
+          'HomePage',
+          style: TextStyle(color: Color.fromARGB(255, 241, 243, 118)),
+        ),
       ),
       body: Column(
         children: [
