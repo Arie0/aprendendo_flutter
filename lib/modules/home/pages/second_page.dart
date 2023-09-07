@@ -6,14 +6,7 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 66, 30, 151),
-        title: const Text(
-          'SecondPage',
-          style: TextStyle(color: Color.fromARGB(255, 241, 243, 118)),
-        ),
-      ),
+      appBar: AppBar(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

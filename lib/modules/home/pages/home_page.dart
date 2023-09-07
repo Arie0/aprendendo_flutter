@@ -1,4 +1,5 @@
 import 'package:aprendendo_flutter/modules/cachorro/pages/cachorro_list_page.dart';
+import 'package:aprendendo_flutter/theme/my_colors.dart';
 import 'package:aprendendo_flutter/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
@@ -8,13 +9,33 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: CachorroListPage(),
+      drawer: Drawer(
+        child: ListView(
+          //children: [
+          //Card(
+          //child: ExpansionTile(
+          //title: Text('Home'),
+          children: [
+            UserAccountsDrawerHeader(
+              accountName: Text('Chupetao'),
+              accountEmail: Text('tuctuc.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage("assets/images/dog.jpg"),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              child: ListTile(
+                title: Text('Cachorros'),
+              ),
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 66, 30, 151),
         title: const Text(
           'HomePage',
-          style: TextStyle(color: Color.fromARGB(255, 241, 243, 118)),
+          style: TextStyle(color: Color.fromARGB(255, 38, 255, 244)),
         ),
       ),
       body: Column(
@@ -38,6 +59,15 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text(
+              "Botão",
+              style: TextStyle(
+                color: my_colors.textLight,
               ),
             ),
           ),
