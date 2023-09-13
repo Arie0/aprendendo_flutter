@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               accountName: Text('Chupetao'),
               accountEmail: Text('tuctuc.com'),
               currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage("assets/images/dog.jpg"),
+                backgroundImage: AssetImage("assets/images/pingu.jpg"),
               ),
             ),
             Card(
